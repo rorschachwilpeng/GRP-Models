@@ -1045,6 +1045,77 @@
 					</Points>
 				</Connector>
 			</Connectors>
+			<Events>
+				<Event>
+					<Id>1582358757017</Id>
+					<Name><![CDATA[recordentrance]]></Name>
+					<X>410</X><Y>-130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1560326400000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[1000]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1000]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[count(EntranceSource1.countPeds()+EntranceSource2.countPeds()+EntranceSource3.countPeds()+EntranceSource4.countPeds());]]></Action>
+				</Event>
+			</Events>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1582358742458</Id>
+					<Name><![CDATA[count]]></Name>
+					<X>410</X><Y>-90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[q]]></Name>
+						<Type><![CDATA[Long]]></Type>
+					</Parameter>
+					<Body><![CDATA[total.println("total:"+q);]]></Body>
+				</Function>
+			</Functions>
+			<Connectivity>
+				<TextFile>
+					<Id>1582358742464</Id>
+					<Name><![CDATA[total]]></Name>
+					<X>410</X><Y>-60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<FileType>FILE</FileType>
+					<Url><![CDATA[]]></Url>
+					<ResourceReference>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[total.txt]]></ClassName>
+					</ResourceReference>
+					<FileMode>WRITE</FileMode>
+					<CharsetName>null</CharsetName>
+					<Separators></Separators>
+				</TextFile>
+			</Connectivity>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1582005621767</Id>
@@ -2404,15 +2475,16 @@
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
+					<PresentationId>1582367670972</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[combine]]></PackageName>
+						<PackageName><![CDATA[incity]]></PackageName>
 						<ClassName><![CDATA[AreaDelay]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[combine]]></PackageName>
+							<PackageName><![CDATA[incity]]></PackageName>
 							<ClassName><![CDATA[AreaDelay]]></ClassName>
-							<ItemName><![CDATA[1559549270437]]></ItemName>
+							<ItemName><![CDATA[1582005645860]]></ItemName>
 						</GenericParameterSubstituteReference>
 						<GenericParameterSubstituteValue Class="CodeValue">
 							<Code><![CDATA[Consumer]]></Code>
@@ -2430,9 +2502,6 @@
 							<Value Class="CodeValue">
 								<Code><![CDATA[toiletentrance.get(index)]]></Code>
 							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[consumerCounter]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[areaDelayTime]]></Name>
@@ -2500,15 +2569,16 @@
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
+					<PresentationId>1582367679233</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[combine]]></PackageName>
+						<PackageName><![CDATA[incity]]></PackageName>
 						<ClassName><![CDATA[AreaDelay]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[combine]]></PackageName>
+							<PackageName><![CDATA[incity]]></PackageName>
 							<ClassName><![CDATA[AreaDelay]]></ClassName>
-							<ItemName><![CDATA[1559549270437]]></ItemName>
+							<ItemName><![CDATA[1582005645860]]></ItemName>
 						</GenericParameterSubstituteReference>
 						<GenericParameterSubstituteValue Class="CodeValue">
 							<Code><![CDATA[Consumer]]></Code>
@@ -2528,9 +2598,6 @@
 							</Value>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[consumerCounter]]></Name>
-						</Parameter>
-						<Parameter>
 							<Name><![CDATA[areaDelayTime]]></Name>
 							<Value Class="CodeUnitValue">
 								<Code><![CDATA[triangular(0,30,3)]]></Code>
@@ -2547,7 +2614,7 @@
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[39]]></Code>
+						<Code><![CDATA[2]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InitialSpeedCode Class="CodeUnitValue">
@@ -3949,9 +4016,6 @@
 							</Value>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[consumerCounter]]></Name>
-						</Parameter>
-						<Parameter>
 							<Name><![CDATA[areaDelayTime]]></Name>
 							<Value Class="CodeUnitValue">
 								<Code><![CDATA[5]]></Code>
@@ -3964,6 +4028,9 @@
 								<Code><![CDATA[triangular(0, 3, 1)]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[consumerCounter]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
@@ -5916,6 +5983,44 @@
 					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 				</Figure3D>
+				<EmbeddedObjectPresentation>
+					<Id>1582367670972</Id>
+					<Name><![CDATA[toilets_presentation]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<DrawingMode>AGENT_CURRENT_POSITION</DrawingMode>
+					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
+					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
+					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
+					<Latitude>0.0</Latitude>
+					<Longitude>0.0</Longitude>
+				</EmbeddedObjectPresentation>
+				<EmbeddedObjectPresentation>
+					<Id>1582367679233</Id>
+					<Name><![CDATA[shops_presentation]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<DrawingMode>AGENT_CURRENT_POSITION</DrawingMode>
+					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
+					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
+					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
+					<Latitude>0.0</Latitude>
+					<Longitude>0.0</Longitude>
+				</EmbeddedObjectPresentation>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -5933,7 +6038,7 @@
 				</GenericParameterValue>
 				<GenericParameterLabel><![CDATA[泛型参数：]]></GenericParameterLabel>
 			</GenericParameter>
-			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<FlowChartsUsage>PED</FlowChartsUsage>
 			<SamplesToKeep>100</SamplesToKeep>
 			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
 			<ElementsLimitValue>100</ElementsLimitValue>
@@ -6349,6 +6454,21 @@
 				</AgentLink>
 			</AgentLinks>
 
+			<ContainerLinks>
+				<ContainerLink>
+					<Id>1582375422978</Id>
+					<Name><![CDATA[main]]></Name>
+					<X>50</X><Y>-100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+					</ActiveObjectClass>
+				</ContainerLink>
+			</ContainerLinks>
 			<EmbeddedObjects>
 				<EmbeddedObject>
 					<Id>1582005720061</Id>
@@ -7130,6 +7250,10 @@
 	<ModelResources>
 		<Resource>
 			<Path><![CDATA[3d/officeworker.dae]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		</Resource>
+		<Resource>
+			<Path><![CDATA[total.txt]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		</Resource>
 	</ModelResources>
