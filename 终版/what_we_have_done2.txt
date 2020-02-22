@@ -1,0 +1,26 @@
+Annie and Solo worked on the functions of the website this week/11.8~11.14, what we did are listed below:
+
+Our plan of last week:
+	What we are going to implement next:
+	1. A functional toolbar and navigation (long-term).
+	2. Attach attributes to the marker to make it a button.
+	3. A window to play video.
+
+Detailed information:
+1. The place-name on the toolbar is a button and its function is to jump to the area by clicking.
+2. The longitude and latitude could be shown right now.
+3. The marker has attributes now, by clicking the marker, the information window of that place will be shown.
+4. In this window, you can choose to play the simulation by clicking a link.
+5. The page of video has been designed.
+6. In the simulation-video page, video of simulator can be seen.
+7. The simulator information can be seen in the block of information
+8. User can send command about simulator(not done)
+9. In the simulation-webpage, back to the homepage by clicking "Ningbo Map".
+10. Some designing work.
+
+Our plan about next week:
+Since every lecture has coursework now, our speed might be slow down. 
+1. Add markers and implement functions of markers (functions are under consideration). e.g., hide or show markers
+2. Do some substantial beautification of the webpage (high priority).
+3. A functional toolbar and navigation (long-term).
+4. Finish our simulation-webpage (long-term).

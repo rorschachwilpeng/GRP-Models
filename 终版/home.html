@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- Google fonts - Muli-->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700"> -->
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <style>
+        html,body,#container{
+            height:100%;
+            width:100%;
+        }
+
+    @media (min-width: 1200px) {
+        .col-zdlg-2-9{
+           float: left;
+           width:11.1111107%;
+         }
+
+		.content-window-card {
+            position: relative;
+            box-shadow: none;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            padding: 0;
+        }
+
+        .content-window-card p {
+            height: 2rem;
+        }
+
+        .custom-info {
+            border: solid 1px silver;
+        }
+
+        div.info-top {
+            position: relative;
+            background: none repeat scroll 0 0 #F9F9F9;
+            border-bottom: 1px solid #CCC;
+            border-radius: 5px 5px 0 0;
+        }
+
+        div.info-top div {
+            display: inline-block;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 31px;
+            padding: 0 10px;
+        }
+
+        div.info-top img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition-duration: 0.25s;
+        }
+
+        div.info-top img:hover {
+            box-shadow: 0px 0px 5px #000;
+        }
+
+        div.info-middle {
+            font-size: 12px;
+            padding: 10px 6px;
+            line-height: 20px;
+        }
+
+        div.info-bottom {
+            height: 0px;
+            width: 100%;
+            clear: both;
+            text-align: center;
+        }
+
+        div.info-bottom img {
+            position: relative;
+            z-index: 104;
+        }
+
+        span {
+            margin-left: 5px;
+            font-size: 11px;
+        }
+
+        .info-middle img {
+            float: left;
+            margin-right: 6px;
+        }
+    </style>
+  </head>
+  
+  <body>
+    <header class="header">   
+      <nav class="navbar navbar-expand-lg"> 
+        
+       <!-- 这里是水平导航栏  我没有想好留下什么功能 css在default.css 里面-->
+
+
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="navbar-header">
+            <!-- Navbar Header--><a href="#" class="navbar-brand"> <!-- 注：此处和子页不一样 !-->
+              <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Simulate</strong><strong>Ningbo</strong></div>
+              <div class="brand-text brand-sm"><strong class="text-primary">S</strong><strong>N</strong></div></a>
+            <!-- Sidebar Toggle Btn-->
+            <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
+          </div>
+		  <!-- 上边栏从这里开始写 -->  
+          <div class="right-menu list-inline no-margin-bottom"> 
+            <!--<div class="list-inline-item"><a href="#" class="search-open nav-link"><i class="icon-magnifying-glass-browser"></i></a></div> !-->
+            <!-- Megamenu-->
+            <div class="list-inline-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="nav-link">Overview <i class="fa fa-ellipsis-v"></i></a>
+              <div class="dropdown-menu megamenu">
+                <div class="row">
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-zdlg-2-9"><strong class="text-uppercase">Elements Heading</strong>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#">Lorem ipsum dolor</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Voluptatum deleniti</a></li>
+                      <li><a href="#">At vero eos</a></li>
+                      <li><a href="#">Consectetur adipiscing</a></li>
+                      <li><a href="#">Duis aute irure</a></li>
+                      <li><a href="#">Necessitatibus saepe</a></li>
+                      <li><a href="#">Maiores alias</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row megamenu-buttons text-center">
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link dashbg-1"><i class="fa fa-clock-o"></i><strong>Demo 1</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link dashbg-2"><i class="fa fa-clock-o"></i><strong>Demo 2</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link dashbg-3"><i class="fa fa-clock-o"></i><strong>Demo 3</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link dashbg-4"><i class="fa fa-clock-o"></i><strong>Demo 4</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link bg-danger"><i class="fa fa-clock-o"></i><strong>Demo 5</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link bg-info"><i class="fa fa-clock-o"></i><strong>Demo 6</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link dashbg-1"><i class="fa fa-clock-o"></i><strong>Demo 7</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link dashbg-2"><i class="fa fa-clock-o"></i><strong>Demo 8</strong></a></div>
+                  <div class="col-zdlg-2-9"><a href="#" class="d-block megamenu-button-link dashbg-3"><i class="fa fa-clock-o"></i><strong>Demo 9</strong></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- Megamenu end -->
+            <!-- Log out               -->
+            <div class="list-inline-item logout">                   
+				<a id="logout" href="login.html" class="nav-link"> <span class="d-none d-sm-inline">Logout </span><i class="icon-logout"></i></a>
+			</div>
+          </div> 
+		  <!-- 上边栏功能结束 -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="d-flex align-items-stretch">
+      <!-- Sidebar Navigation-->	
+	  <!-- 侧边栏从这里开始 -->
+      <nav id="sidebar">
+        <!-- Sidebar Header-->
+        <div class="sidebar-header d-flex align-items-center">
+          <div class="title">
+            <h1 class="h5">Mark Stephen</h1>
+            <p>Web Designer</p>
+          </div>
+        </div>
+	
+
+        <!-- 这里是导航栏菜单 css在default.css里面-->
+
+        <!-- Sidebar Navidation Menus--><span class="heading">City Levels</span>
+        <ul class="list-unstyled">
+          <!-- <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+          <li><a href="tables.html"> <i class="icon-grid"></i>Tables </a></li>
+          <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
+          <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li> -->
+          <li><a href="#exampledropdownDropdown0" aria-expanded="false" data-toggle="collapse"> <i class="icon" data-icon="A"></i>Transportation </a>
+            <ul id="exampledropdownDropdown0" class="collapse list-unstyled ">
+              <li><a href="#" id="reset-bounds3">Ningbo Lishe International Airport</a></li>
+              <li><a href="#" id="reset-bounds5">GuLou Subway Station</a></li>
+			  <li><a href="#" id="reset-bounds6">Ningbo Seaport</a></li>
+			  <li><a href="#" id="reset-bounds7">Ningbo Train Station</a></li>
+			  <li><a href="#" id="reset-bounds10">Intersection next to In City</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#exampledropdownDropdown1" aria-expanded="false" data-toggle="collapse"> <i class="icon-layers"></i>Education Facility </a>
+            <ul id="exampledropdownDropdown1" class="collapse list-unstyled ">
+              <li><a href="#" id="reset-bounds2">The University of Nottingham Ningbo</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#exampledropdownDropdown2" aria-expanded="false" data-toggle="collapse"> <i class="icon" data-icon="S"></i>Medical Facility </a>
+            <ul id="exampledropdownDropdown2" class="collapse list-unstyled ">
+              <li><a href="#"id="reset-bounds8">Ningbo Urology Hospital of Nephropathy</a></li>
+            </ul>
+          </li>
+		  
+		   <li><a href="#exampledropdownDropdown3" aria-expanded="false" data-toggle="collapse"> <i class="icon-check"></i>Business Facility </a>
+            <ul id="exampledropdownDropdown3" class="collapse list-unstyled ">
+              <li><a href="#" id="reset-bounds4">In Time City</a></li>
+			  <li><a href="#" id="reset-bounds9">In City</a></li>
+            </ul>
+          </li>
+
+        </ul><span class="heading">Simulation Tool</span>
+        <ul class="list-unstyled">
+          <li> <a href="https://www.anylogic.cn/"> <i class="icon-settings"></i>AnyLogic </a></li>
+          <!-- NetLogo导航栏禁用，1.25 <li> <a href="#"> <i class="icon-writing-whiteboard"></i>NetLogo </a></li> -->
+		</ul>
+      </nav>
+      <!-- Sidebar Navigation end-->
+	  <!-- 侧边栏写完 -->
+      <div class="page-content">
+        <!--！！！删去了一个title，地图能更大一些。于11.13删去——楼
+		<div class="page-header">
+          <div class="container-fluid">
+			<h2 class="h5 no-margin-bottom">Ningbo Map</h2>
+          </div>
+		-->
+
+  <!-- 下面这一行是地图的容器 -->
+  <div style="align:right;width:100%;height:100%;border:#ccc solid 0px;" id="container"></div>  
+  <div class="input-card" style="width:11rem">
+    <h4>Change Language</h4>
+    <div id="lang">
+      <div class="input-item"><input id="en" name="language" type="radio" checked="checked"><span class="input-text">English</span></div>
+      <div class="input-item"><input id="zh_cn" name="language" type="radio"><span class="input-text">Chinese</span></div>
+      <div class="input-item"><input id="zh_en" name="language" type="radio"><span class="input-text">Both</span></div>
+    </div>
+  </div>
+  <div class="info" style="position:relative;left:1px;top:1px;width:15rem;"> <!-- 宽度降到19就降不了了——1.25 -->
+    <h4>The range of current map (Bounds)</h4>
+    <p>Northeast coordinates：<span id="ne" class="lnglat"></span></p>
+    <p>Southwest coordinates：<span id="sw" class="lnglat"></span></p>
+	<button style="display:block;margin:0 auto" class="btn" id="reset-bounds1">See the whole NingBo</button>
+  </div>
+</div>
+</div>
+
+<style>
+        html,body,#container{
+            height:100%;
+            width:100%;
+        }
+         .marker {
+            color: #ff6600;
+            padding: 4px 10px;
+            border: 1px solid #fff;
+            white-space: nowrap;
+            font-size: 12px;
+            font-family: "";
+            background-color: #0066ff;
+        }
+</style>
+  
+  <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+  <script src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script>
+  <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+  <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+  <script src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script>
+  <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+  <script>
+    //创建地图
+    var marker, map = new AMap.Map('container', {
+      resizeEnable: true,
+      zoom: 11,
+      showIndoorMap: false,
+      lang: "en"
+    });
+
+    //绑定radio点击事件
+    var radios = document.querySelectorAll("#lang input");
+    radios.forEach(function(ratio) {
+      ratio.onclick = setLang;
+    });
+
+    function setLang() {
+      map.setLang(this.id);
+    }
+
+    function logMapInfo() {
+      var limitBounds = map.getLimitBounds();
+      if (limitBounds) {
+        document.querySelector("#ne").innerText = limitBounds.northeast.toString();
+        document.querySelector("#sw").innerText = limitBounds.southwest.toString();
+      } else {
+        document.querySelector("#ne").innerText = document.querySelector("#sw").innerText = "未限定";
+      }
+    }
+
+	//2020.1.24禁用
+    //限制地图显示范围
+    //function lockMapBounds() {
+    //  var bounds = map.getBounds();
+    //  map.setLimitBounds(bounds);
+    //  logMapInfo();
+    //}
+
+    //取消地图显示限制
+    function unlockMapBounds() {
+      map.clearLimitBounds();
+      logMapInfo();
+    }
+
+    window.onload = function(){
+        addMarker();
+    }
+
+    // 实例化点标记
+    //function addMarker() {
+    //map.clearMap();
+    //var marker = new AMap.Marker({
+    //    map: map,
+    //    position: [121.56351,29.80002]
+    //});
+    //鼠标点击marker弹出自定义的信息窗体
+    //AMap.event.addListener(marker, 'click', function () {
+    //    infoWindow.open(map, marker.getPosition());
+    //});
+	//}
+	addMarker();
+
+	//添加marker标记，实现自定义弹窗
+	function addMarker() {
+		map.clearMap();
+		//学校
+		var marker = new AMap.Marker({
+			map: map,
+			position: [121.56351,29.80002]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker, 'click', function () {
+			infoWindow.open(map, marker.getPosition());
+		});
+		
+		//银泰
+		var marker1 = new AMap.Marker({
+			map: map,
+			position: [121.54542,29.79661]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker1, 'click', function () {
+			infoWindowyintai.open(map, marker1.getPosition());
+		});
+		
+		//鼓楼地铁站 
+		var marker2 = new AMap.Marker({
+			map: map,
+			position: [121.548970,29.873914]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker2, 'click', function () {
+			infoWindowsubway.open(map, marker2.getPosition());
+		});
+		
+		//鄞州二院
+		var marker3 = new AMap.Marker({
+			map: map,
+			position: [121.555568,29.821859]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker3, 'click', function () {
+			infoWindowhospital.open(map, marker3.getPosition());
+		});
+		
+		//机场
+		var marker4 = new AMap.Marker({
+			map: map,
+			position: [121.4615570000,29.817638000]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker4, 'click', function () {
+			infoWindowairport.open(map, marker4.getPosition());
+		});
+		
+		//宁波站
+		var marker5 = new AMap.Marker({
+			map: map,
+			position: [121.536807,29.861967]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker5, 'click', function () {
+			infoWindowstation.open(map, marker5.getPosition());
+		});
+		
+		//港口
+		var marker6 = new AMap.Marker({
+			map: map,
+			position: [121.679944,29.9216521]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker6, 'click', function () {
+			infoWindowport.open(map, marker6.getPosition());
+		});
+		
+		//印象城
+		var marker7 = new AMap.Marker({
+			map: map,
+			position: [121.5669790000,29.8334160000]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker7, 'click', function () {
+			infoWindowIn.open(map, marker7.getPosition());
+		});
+		
+		//印象城旁的十字路口
+		var marker8 = new AMap.Marker({
+			map: map,
+			position: [121.566963,29.834474]
+		});
+		//鼠标点击marker弹出自定义的信息窗体
+		AMap.event.addListener(marker8, 'click', function () {
+			infoWindowcrossroad.open(map, marker8.getPosition());
+		});
+	}
+	//11.13，添加markder标记并且实现“点击marker标记可以出现窗口”这个功能。
+	
+	//实例化信息窗体
+    //UNNC
+	var title = 'University of Nottingham, Ningbo, China',
+		content = [];
+	content.push("<img src='img/UNNC.png' width = '300px' height = '100px'>address：......, Ningbo, China");
+	content.push("电话：010-64733333");
+	content.push("!!!Css is still at the designing stage!!!");
+	content.push("!!!This is NOT the final version!!!");
+	content.push("<a href='UNNC.html'>Click here for more information</a>");
+	var infoWindow = new AMap.InfoWindow({
+		isCustom: true,  //使用自定义窗体
+		content: createInfoWindow(title, content.join("<br/>")),
+		offset: new AMap.Pixel(16, -45)
+	});
+
+  //港口
+  var titleport = 'Seaport, Ningbo, China',
+    contentport = [];
+  contentport.push("<img src='img/port.png' width = '300px' height = '100px'>address：......, Ningbo, China");
+  contentport.push("电话：010-64733333");
+  contentport.push("!!!Css is still at the designing stage!!!");
+  contentport.push("!!!This is NOT the final version!!!");
+  contentport.push("<a href='port.html'>Click here for more information</a>");
+  var infoWindowport = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titleport, contentport.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+
+  //宁波站 //没有上传模型
+  var titlestation = 'Railway Station, Ningbo, China',
+    contentstation = [];
+  contentstation.push("<img src='img/station.png' width = '300px' height = '150px'>address：......, Ningbo, China");
+  contentstation.push("电话：010-64733333");
+  contentstation.push("!!!Css is still at the designing stage!!!");
+  contentstation.push("!!!This is NOT the final version!!!");
+  contentstation.push("<a href='station.html'>Click here for more information</a>");
+  var infoWindowstation = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titlestation, contentstation.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+
+  //机场
+  var titleairport = 'Lishe International Airport, Ningbo, China',
+    contentairport = [];
+  contentairport.push("<img src='img/airport.png' width = '300px' height = '150px'>address：......, Ningbo, China");
+  contentairport.push("电话：010-64733333");
+  contentairport.push("!!!Css is still at the designing stage!!!");
+  contentairport.push("!!!This is NOT the final version!!!");
+  contentairport.push("<a href='LisheAirport.html'>Click here for more information</a>");
+  var infoWindowairport = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titleairport, contentairport.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+
+  //鄞州二院
+  var titlehospital = 'Yinzhou No.2 Hospital, Ningbo, China',
+    contenthospital = [];
+  contenthospital.push("<img src='img/hospital.png' width = '300px' height = '150px'>address：......, Ningbo, China");
+  contenthospital.push("电话：010-64733333");
+  contenthospital.push("!!!Css is still at the designing stage!!!");
+  contenthospital.push("!!!This is NOT the final version!!!");
+  contenthospital.push("<a href='NingboNo2Hospital.html'>Click here for more information</a>");
+  var infoWindowhospital = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titlehospital, contenthospital.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+
+  //鼓楼地铁站
+  var titlesubway = 'Gulou Subway Station, Ningbo, China',
+    contentsubway = [];
+  contentsubway.push("<img src='img/subway.png' width = '300px' height = '150px'>address：......, Ningbo, China");
+  contentsubway.push("电话：010-64733333");
+  contentsubway.push("!!!Css is still at the designing stage!!!");
+  contentsubway.push("!!!This is NOT the final version!!!");
+  contentsubway.push("<a href='subway.html'>Click here for more information</a>");
+  var infoWindowsubway = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titlesubway, contentsubway.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+
+  //银泰
+  var titleyintai = 'In Time City, Ningbo, China',
+    contentyintai = [];
+  contentyintai.push("<img src='img/Yintai.png' width = '300px' height = '150px'>address：......, Ningbo, China");
+  contentyintai.push("电话：010-64733333");
+  contentyintai.push("!!!Css is still at the designing stage!!!");
+  contentyintai.push("!!!This is NOT the final version!!!");
+  contentyintai.push("<a href='Yintai.html'>Click here for more information</a>");
+  var infoWindowyintai = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titleyintai, contentyintai.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+  
+  //印象城
+  var titleIn = 'In City, Ningbo, China',
+    contentIn = [];
+  contentIn.push("<img src='img/IN.JPG' width = '300px' height = '150px'>address：......, Ningbo, China");
+  contentIn.push("电话：010-64733333");
+  contentIn.push("!!!Css is still at the designing stage!!!");
+  contentIn.push("!!!This is NOT the final version!!!");
+  contentIn.push("<a href='IN.html'>Click here for more information</a>");
+  var infoWindowIn = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titleIn, contentIn.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+  
+  //印象城旁十字路口
+  var titlecrossroad = 'Intersection, Ningbo, China',
+    contentcrossroad = [];
+  contentcrossroad.push("<img src='img/Intersection.png' width = '300px' height = '150px'>address：......, Ningbo, China");
+  contentcrossroad.push("电话：010-64733333");
+  contentcrossroad.push("!!!Css is still at the designing stage!!!");
+  contentcrossroad.push("!!!This is NOT the final version!!!");
+  contentcrossroad.push("<a href='Intersection.html'>Click here for more information</a>");
+  var infoWindowcrossroad = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow(titlecrossroad, contentcrossroad.join("<br/>")),
+    offset: new AMap.Pixel(16, -45)
+  });
+
+	//11.13，上面的部分如果复制的话需要改var后面的变量名。
+
+	//构建自定义信息窗体，类似于窗体的css。
+	function createInfoWindow(title, content) {
+		var info = document.createElement("div");
+		info.className = "custom-info input-card content-window-card";
+
+		//可以通过下面的方式修改自定义窗体的宽高
+		//info.style.width = "400px";
+		// 定义顶部标题
+		var top = document.createElement("div");
+		var titleD = document.createElement("div");
+		var closeX = document.createElement("img");
+		top.className = "info-top";
+		titleD.innerHTML = title;
+		closeX.src = "https://webapi.amap.com/images/close2.gif";
+		closeX.onclick = closeInfoWindow;
+
+		top.appendChild(titleD);
+		top.appendChild(closeX);
+		info.appendChild(top);
+
+		// 定义中部内容
+		var middle = document.createElement("div");
+		middle.className = "info-middle";
+		middle.style.backgroundColor = 'white';
+		middle.innerHTML = content;
+		info.appendChild(middle);
+
+		// 定义底部内容
+		var bottom = document.createElement("div");
+		bottom.className = "info-bottom";
+		bottom.style.position = 'relative';
+		bottom.style.top = '0px';
+		bottom.style.margin = '0 auto';
+		var sharp = document.createElement("img");
+		sharp.src = "https://webapi.amap.com/images/sharp.png";
+		bottom.appendChild(sharp);
+		info.appendChild(bottom);
+		return info;
+	}
+
+	//关闭信息窗体
+	function closeInfoWindow() {
+		map.clearInfoWindow();
+	}
+			
+	//显示当前地图边界范围坐标
+    function logMapBounds() {
+      var bounds = map.getBounds();
+      document.querySelector("#ne").innerText = bounds.northeast.toString();
+      document.querySelector("#sw").innerText = bounds.southwest.toString();
+    }
+
+    logMapBounds();
+
+    //绑定地图移动与缩放事件
+    map.on('moveend', logMapBounds);
+    map.on('zoomend', logMapBounds);
+
+    //绑定按钮事件 宁波
+    document.querySelector("#reset-bounds1").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds1 = new AMap.Bounds([121.770515,30.017448], [121.323852,29.741493]);
+      map.setBounds(mybounds1);
+    }
+	
+	//绑定按钮事件 学校
+    document.querySelector("#reset-bounds2").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds2 = new AMap.Bounds([121.552268,29.795261], [121.572867,29.804636]);
+      map.setBounds(mybounds2);
+    }
+	
+	//绑定按钮事件 机场
+    document.querySelector("#reset-bounds3").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds3 = new AMap.Bounds([121.443297,29.807016], [121.488916,29.83267]);
+      map.setBounds(mybounds3);
+    }
+	
+	//绑定按钮事件 银泰
+    document.querySelector("#reset-bounds4").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds4 = new AMap.Bounds([121.536285,29.791813], [121.553698,29.801188]);
+      map.setBounds(mybounds4);
+    }
+	
+	//绑定按钮事件 鼓楼
+    document.querySelector("#reset-bounds5").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds5 = new AMap.Bounds([121.541319,29.869182], [121.558731,29.87855]);
+      map.setBounds(mybounds5);
+    }
+	
+	//绑定按钮事件 港口
+    document.querySelector("#reset-bounds6").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds6 = new AMap.Bounds([121.662531,29.912288], [121.697356,29.931016]);
+      map.setBounds(mybounds6);
+    }
+	
+	//绑定按钮事件 火车站
+    document.querySelector("#reset-bounds7").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds7 = new AMap.Bounds([121.527474,29.857112], [121.544887,29.866482]);
+      map.setBounds(mybounds7);
+    }
+	
+	//绑定按钮事件 鄞州二院
+    document.querySelector("#reset-bounds8").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds8 = new AMap.Bounds([121.551169,29.819409], [121.559876,29.824096]);
+      map.setBounds(mybounds8);
+    }
+
+	//绑定按钮事件 印象城
+	document.querySelector("#reset-bounds9").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds9 = new AMap.Bounds([121.563565,29.831476], [121.569267,29.834487]);
+      map.setBounds(mybounds9);
+    }
+	
+	//绑定按钮事件 印象城旁十字路口
+	document.querySelector("#reset-bounds10").onclick = function() {
+      //通过 new AMap.Bounds(southWest:LngLat, northEast:LngLat) 或者 map.getBounds() 获得地图Bounds信息
+      var mybounds10 = new AMap.Bounds([121.564219,29.832258], [121.569922,29.835855]);
+      map.setBounds(mybounds10);
+    }
+	
+    //启用地图范围限定
+    lockMapBounds();
+    logMapInfo();
+
+    //绑定按钮事件
+    document.querySelector("#lock-bounds").onclick = lockMapBounds;
+    document.querySelector("#unlock-bounds").onclick = unlockMapBounds;
+
+  </script>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <script src="js/front.js"></script>
+  </body>
+</html>

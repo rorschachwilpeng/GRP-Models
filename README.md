@@ -39,5 +39,18 @@ The Work needed invastigate:
 3. The time period of the traffic light
 
 
+2020/2/6/
+
+The work done on 2020.2.6
+
+1. Make adjustment to the veiw of the model -> now can junmp to different versions during the simulation
+
+
+The work done on 2020.2.22
+
+1. Fix the size problem, all page got same size when running the model; 
+
+2. The problem with the zoom out and zoom in which can't make the page stable is still need to be fixed
+
 
 

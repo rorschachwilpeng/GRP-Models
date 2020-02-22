@@ -1,0 +1,15 @@
+Annie and Solo worked on the framework of the website this week/10.31~11.7, what we did are listed below:
+1. We decid to use the Amap for the API (Amap in Chinese is ¸ßµÂµØÍ¼). In the beginning, we compared four maps (only for API): Google Map, Baidu Map, Tencent Map and Amap. 
+Honestly, Google Map performs best, but it's hard to use Google services in mainland China, therefore, we abandoned the Google Map. 
+Baidu Map doesn't have English Map for API and its internal code is complex and inefficient. Tencent map API development is more like at a begining stage with few internal functions.
+In contrast, Amap's API is more suitable for developers, it opens a lot of functions, the code programmability is much better than Baidu map(we did try it), and support English Map. That's why we chose Amap.
+2. Based on Amap, the language transformation of the map is implemented.
+3. The ability to make the map scalable is implemented.
+4. The map center was located in ningbo and it can be dragged and zoomed.
+5. The first point/coordinate on the map was marked.
+6. A simple toolbar and navigation bar were made.
+
+What we are going to implement next:
+1. A functional toolbar and navigation.
+2. Attach attributes to the marker to make it a button.
+3. A window to play video.
