@@ -1,3 +1,4 @@
+
 # GRP-Models
 Building the simulation models for the GRP
 
@@ -53,4 +54,14 @@ The work done on 2020.2.22
 2. The problem with the zoom out and zoom in which can't make the page stable is still need to be fixed
 
 
+2020.2.23
+1. Draw done all the polyline (所有的折线都画在了图上 -> 用于清晰分辨商店）
+2. Draw all the entrances (consumer现在可以进入所有的 商店）
+3. 3D vision 
+4. 导航栏加入
 
+The work still need to do next还没完成的工作：
+1.  加每个商店人数 counter
+2. 加摄像头机位
+3. 商场工作人员
+4. 加小障碍物
