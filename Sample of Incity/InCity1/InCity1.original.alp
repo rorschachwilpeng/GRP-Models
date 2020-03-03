@@ -156,7 +156,7 @@
 						<ElementClass><![CDATA[TargetLine]]></ElementClass>
 						<ValueElementClass><![CDATA[String]]></ValueElementClass>
 						<CollectionInitializer Class="CodeValue">
-							<Code><![CDATA[{ HaiMaEntranceLine, AdidasEntranceLine, AdidasSWEntranceLine, StarBucksEntranceLine, ZaraEntranceLine, DuoZouLuEntranceLine, CharlesKeithEntranceLine, wonderfullifeEntranceLine, mixyinmiEntranceLine, lujiaoxiangEntranceLine, ckjeansEntranceLine, ZaraHomeEntranceLine, ZaraEntranceLine, YouSuEntranceLine, XiaopengcarEntranceLine, XiaoMiEntranceLine1, XiaoMiEntranceLine, UniqloEntranceLine1, UniqloEntranceLine, UnderwearShopEntranceLine, TommyHilfigerEntranceLine, TBEntranceLine, HaagenDazsEntranceLine, SephoraEntranceLine, QinCafeEntranceLine, PizzaHutEntranceLine, OyshoEntranceLine, NikeKicksLoungeEntranceLine, MassimoduttiEntranceLine1, MassimoduttiEntranceLine, HMEntranceLine, EpoqueEntranceLine, DuoZouLuEntranceLine, CostaEntranceLine, CharlesKeithEntranceLine1, CharlesKeithEntranceLine }]]></Code>
+							<Code><![CDATA[{ AdidasEntranceLine, AdidasSWEntranceLine, AmazingrEntranceLine, CharlesKeithEntranceLine, CharlesKeithEntranceLine1, CostaEntranceLine, DuoZouLuEntranceLine, EccoEntranceLine, EpoqueEntranceLine, HMEntranceLine, HaagenDazsEntranceLine, HaiMaEntranceLine, HazzysEntranceLine, HuaWeiEntranceLine, INXXEntranceLine, LadymEntranceLine, MassimoduttiEntranceLine, MassimoduttiEntranceLine1, NikeKicksLoungeEntranceLine, OyshoEntranceLine, PizzaHutEntranceLine, QinCafeEntranceLine, SephoraEntranceLine, TBEntranceLine, StarBucksEntranceLine, TommyHilfigerEntranceLine, UnderwearShopEntranceLine, UniqloEntranceLine, UniqloEntranceLine1, XiaoMiEntranceLine, XiaopengcarEntranceLine, YouSuEntranceLine, ZaraEntranceLine, ZaraHomeEntranceLine, ckjeansEntranceLine, lujiaoxiangEntranceLine, mixyinmiEntranceLine, wonderfullifeEntranceLine }]]></Code>
 						</CollectionInitializer>
 					</Properties>
 
@@ -1717,6 +1717,75 @@
 						<Point><X>-546</X><Y>-310</Y></Point>
 					</Points>
 				</Connector>
+				<Connector>
+					<Id>1582462047233</Id>
+					<Name><![CDATA[connector7]]></Name>
+					<X>2056</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[lift]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[AreaDelay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[selectOutput]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>24</X><Y>0</Y></Point>
+						<Point><X>24</X><Y>160</Y></Point>
+						<Point><X>-146</X><Y>160</Y></Point>
+						<Point><X>-146</X><Y>-80</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1582462065734</Id>
+					<Name><![CDATA[connector8]]></Name>
+					<X>2000</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[selectShop5]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutputIn]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectOutput5]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out3]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-30</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
 			</Connectors>
 			<Events>
 				<Event>
@@ -2791,7 +2860,7 @@ viewArea.navigateTo();
 						<Parameter>
 							<Name><![CDATA[probability1]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[0.8]]></Code>
+								<Code><![CDATA[0.6]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2802,9 +2871,6 @@ viewArea.navigateTo();
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability2]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[0.15]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit2]]></Name>
@@ -2814,9 +2880,6 @@ viewArea.navigateTo();
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability3]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[0]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit3]]></Name>
@@ -3189,7 +3252,7 @@ viewArea.navigateTo();
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[2]]></Code>
+						<Code><![CDATA[34]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
@@ -6400,6 +6463,176 @@ viewArea.navigateTo();
 					<QuantityColumn>
 					</QuantityColumn>
 				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1582462043878</Id>
+					<Name><![CDATA[lift]]></Name>
+					<X>2020</X><Y>210</Y>
+					<Label><X>20</X><Y>-5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[incity]]></PackageName>
+						<ClassName><![CDATA[AreaDelay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[incity]]></PackageName>
+							<ClassName><![CDATA[AreaDelay]]></ClassName>
+							<ItemName><![CDATA[1582005645860]]></ItemName>
+						</GenericParameterSubstituteReference>
+						<GenericParameterSubstituteValue Class="CodeValue">
+							<Code><![CDATA[Consumer]]></Code>
+						</GenericParameterSubstituteValue>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[selectOutputIn]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[selectShop5]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[areaEntrance]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[toiletentrance.get(index)]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[areaDelayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[triangular(0,10,3)]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[cancelDelayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[triangular(0, 3, 1)]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>true</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[1]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InEnvironment>true</InEnvironment>	
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1582462063035</Id>
+					<Name><![CDATA[selectShop5]]></Name>
+					<X>2000</X><Y>210</Y>
+					<Label><X>-15</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutputIn]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[SelectOutputIn]]></ClassName>
+							<ItemName><![CDATA[1412336243165]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[conditionIsProbabilistic]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[choice]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[shops.get(agent.tasks.getFirst().id).inBlock]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
 			</EmbeddedObjects>
 
 			<Shapes>
@@ -6783,15 +7016,15 @@ viewArea.navigateTo();
 						<Point><X>24.936</X><Y>38.219</Y><Z>0</Z></Point>
 						<Point><X>70</X><Y>35</Y><Z>0</Z></Point>
 						<Point><X>45.064</X><Y>36.781</Y><Z>0</Z></Point>
-						<Point><X>64.577</X><Y>10.595</Y><Z>0</Z></Point>
-						<Point><X>50</X><Y>-55</Y><Z>0</Z></Point>
-						<Point><X>55.423</X><Y>-30.595</Y><Z>0</Z></Point>
-						<Point><X>25.124</X><Y>-52.512</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-50</Y><Z>0</Z></Point>
-						<Point><X>24.876</X><Y>-52.488</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-25</Y><Z>0</Z></Point>
+						<Point><X>64.114</X><Y>10.703</Y><Z>0</Z></Point>
+						<Point><X>44.976</X><Y>-68.292</Y><Z>0</Z></Point>
+						<Point><X>50.862</X><Y>-43.995</Y><Z>0</Z></Point>
+						<Point><X>20.06</X><Y>-66.24</Y><Z>0</Z></Point>
+						<Point><X>-1.123</X><Y>-64.496</Y><Z>0</Z></Point>
+						<Point><X>23.793</X><Y>-66.548</Y><Z>0</Z></Point>
+						<Point><X>-0.492</X><Y>-39.504</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>-20</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-45</Y><Z>0</Z></Point>
+						<Point><X>-0.631</X><Y>-44.992</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>5</Y><Z>0</Z></Point>
 					</Points>
 				</Wall>
@@ -6859,20 +7092,20 @@ viewArea.navigateTo();
 					<Closed>true</Closed>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-7.07642862822027</X><Y>-23.977576146677222</Y><Z>0</Z></Point>
 						<Point><X>5.726</X><Y>24.335</Y><Z>0</Z></Point>
 						<Point><X>9.443</X><Y>40.131</Y><Z>0</Z></Point>
 						<Point><X>3.717</X><Y>15.796</Y><Z>0</Z></Point>
 						<Point><X>33.172</X><Y>32.264</Y><Z>0</Z></Point>
 						<Point><X>40</X><Y>30</Y><Z>0</Z></Point>
 						<Point><X>16.27</X><Y>37.867</Y><Z>0</Z></Point>
-						<Point><X>36.464</X><Y>5.251</Y><Z>0</Z></Point>
-						<Point><X>35</X><Y>-5</Y><Z>0</Z></Point>
-						<Point><X>38.536</X><Y>19.749</Y><Z>0</Z></Point>
-						<Point><X>10.251</X><Y>-1.464</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>24.749</X><Y>-3.536</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>36.823</X><Y>5.203</Y><Z>0</Z></Point>
+						<Point><X>34.04</X><Y>-16.509</Y><Z>0</Z></Point>
+						<Point><X>37.218</X><Y>8.288</Y><Z>0</Z></Point>
+						<Point><X>9.125</X><Y>-14.458</Y><Z>0</Z></Point>
+						<Point><X>-3.949</X><Y>-13.381</Y><Z>0</Z></Point>
+						<Point><X>20.967</X><Y>-15.433</Y><Z>0</Z></Point>
+						<Point><X>3.127</X><Y>10.597</Y><Z>0</Z></Point>
 					</Points>
 				</Wall>
 				<Wall>
@@ -6893,20 +7126,20 @@ viewArea.navigateTo();
 					<Closed>true</Closed>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-6.628423220324499</X><Y>-24.10526924994332</Y><Z>0</Z></Point>
 						<Point><X>6.063</X><Y>24.254</Y><Z>0</Z></Point>
 						<Point><X>10</X><Y>40</Y><Z>0</Z></Point>
 						<Point><X>3.937</X><Y>15.746</Y><Z>0</Z></Point>
 						<Point><X>34.515</X><Y>35.097</Y><Z>0</Z></Point>
 						<Point><X>35</X><Y>35</Y><Z>0</Z></Point>
 						<Point><X>10.485</X><Y>39.903</Y><Z>0</Z></Point>
-						<Point><X>28.937</X><Y>10.746</Y><Z>0</Z></Point>
-						<Point><X>25</X><Y>-5</Y><Z>0</Z></Point>
-						<Point><X>31.063</X><Y>19.254</Y><Z>0</Z></Point>
-						<Point><X>0.485</X><Y>-0.097</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>24.515</X><Y>-4.903</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>28.938</X><Y>10.746</Y><Z>0</Z></Point>
+						<Point><X>22.999</X><Y>-13.012</Y><Z>0</Z></Point>
+						<Point><X>29.061</X><Y>11.242</Y><Z>0</Z></Point>
+						<Point><X>-1.917</X><Y>-10.96</Y><Z>0</Z></Point>
+						<Point><X>-2.989</X><Y>-10.871</Y><Z>0</Z></Point>
+						<Point><X>21.926</X><Y>-12.924</Y><Z>0</Z></Point>
+						<Point><X>3.639</X><Y>13.234</Y><Z>0</Z></Point>
 					</Points>
 				</Wall>
 				<Wall>
@@ -8012,7 +8245,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582119892598</Id>
 					<Name><![CDATA[WashRoomLine]]></Name>
-					<X>900</X><Y>-596</Y>
+					<X>897</X><Y>-596</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8059,7 +8292,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582120430501</Id>
 					<Name><![CDATA[liftentrance1]]></Name>
-					<X>550</X><Y>-700</Y>
+					<X>546</X><Y>-700</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8075,7 +8308,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582120459395</Id>
 					<Name><![CDATA[liftentrance2]]></Name>
-					<X>840</X><Y>-640</Y>
+					<X>840</X><Y>-637</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8108,7 +8341,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582186899876</Id>
 					<Name><![CDATA[HaiMaEntranceLine]]></Name>
-					<X>800</X><Y>-460</Y>
+					<X>797</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8124,7 +8357,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582378223019</Id>
 					<Name><![CDATA[AdidasSWEntranceLine]]></Name>
-					<X>770</X><Y>-818</Y>
+					<X>772</X><Y>-816</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8140,7 +8373,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582378510643</Id>
 					<Name><![CDATA[StarBucksEntranceLine]]></Name>
-					<X>210</X><Y>-780</Y>
+					<X>203</X><Y>-777</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8150,13 +8383,13 @@ viewArea.navigateTo();
 					<LineColor>-16744448</LineColor>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-80</X><Y>0</Y></Point>
+						<Point><X>-73</X><Y>0</Y></Point>
 					</Points>
 				</TargetLine>
 				<TargetLine>
 					<Id>1582380730291</Id>
 					<Name><![CDATA[ZaraEntranceLine]]></Name>
-					<X>85</X><Y>-650</Y>
+					<X>87</X><Y>-652</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8172,7 +8405,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582381964083</Id>
 					<Name><![CDATA[DuoZouLuEntranceLine]]></Name>
-					<X>450</X><Y>-530</Y>
+					<X>450</X><Y>-534</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8188,7 +8421,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455116010</Id>
 					<Name><![CDATA[EccoEntranceLine]]></Name>
-					<X>235</X><Y>-780</Y>
+					<X>233</X><Y>-777</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8198,13 +8431,13 @@ viewArea.navigateTo();
 					<LineColor>-16744448</LineColor>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-25</X><Y>0</Y></Point>
+						<Point><X>-21</X><Y>0</Y></Point>
 					</Points>
 				</TargetLine>
 				<TargetLine>
 					<Id>1582455182257</Id>
 					<Name><![CDATA[TommyHilfigerEntranceLine]]></Name>
-					<X>275</X><Y>-780</Y>
+					<X>275</X><Y>-777</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8220,7 +8453,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455256083</Id>
 					<Name><![CDATA[AmazingrEntranceLine]]></Name>
-					<X>320</X><Y>-780</Y>
+					<X>320</X><Y>-777</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8236,7 +8469,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455368609</Id>
 					<Name><![CDATA[MassimoduttiEntranceLine]]></Name>
-					<X>400</X><Y>-780</Y>
+					<X>400</X><Y>-777</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8252,7 +8485,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455403523</Id>
 					<Name><![CDATA[MassimoduttiEntranceLine1]]></Name>
-					<X>453</X><Y>-780</Y>
+					<X>451</X><Y>-777</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8268,7 +8501,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455436872</Id>
 					<Name><![CDATA[SephoraEntranceLine]]></Name>
-					<X>553</X><Y>-784</Y>
+					<X>553</X><Y>-781</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8284,7 +8517,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455493874</Id>
 					<Name><![CDATA[INXXEntranceLine]]></Name>
-					<X>591</X><Y>-836</Y>
+					<X>595</X><Y>-836</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8300,7 +8533,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455664817</Id>
 					<Name><![CDATA[HaagenDazsEntranceLine]]></Name>
-					<X>585</X><Y>-875</Y>
+					<X>589</X><Y>-875</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8316,7 +8549,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455715874</Id>
 					<Name><![CDATA[PizzaHutEntranceLine]]></Name>
-					<X>641</X><Y>-880</Y>
+					<X>638</X><Y>-879</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8332,7 +8565,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455785258</Id>
 					<Name><![CDATA[HazzysEntranceLine]]></Name>
-					<X>652</X><Y>-835</Y>
+					<X>649</X><Y>-835</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8348,7 +8581,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455844691</Id>
 					<Name><![CDATA[TBEntranceLine]]></Name>
-					<X>715</X><Y>-805</Y>
+					<X>718</X><Y>-803</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8358,13 +8591,13 @@ viewArea.navigateTo();
 					<LineColor>-16744448</LineColor>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>20</X><Y>-5</Y></Point>
+						<Point><X>15</X><Y>-4</Y></Point>
 					</Points>
 				</TargetLine>
 				<TargetLine>
 					<Id>1582455895632</Id>
 					<Name><![CDATA[NikeKicksLoungeEntranceLine]]></Name>
-					<X>740</X><Y>-811</Y>
+					<X>741</X><Y>-809</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8380,7 +8613,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582455966558</Id>
 					<Name><![CDATA[HMEntranceLine]]></Name>
-					<X>985</X><Y>-790</Y>
+					<X>985</X><Y>-793</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8396,7 +8629,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582456049900</Id>
 					<Name><![CDATA[QinCafeEntranceLine]]></Name>
-					<X>900</X><Y>-620</Y>
+					<X>897</X><Y>-620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8412,7 +8645,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582457665202</Id>
 					<Name><![CDATA[YouSuEntranceLine]]></Name>
-					<X>930</X><Y>-495</Y>
+					<X>927</X><Y>-495</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8428,7 +8661,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582457737169</Id>
 					<Name><![CDATA[XiaopengcarEntranceLine]]></Name>
-					<X>819</X><Y>-605</Y>
+					<X>815</X><Y>-605</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8444,7 +8677,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582457973054</Id>
 					<Name><![CDATA[CostaEntranceLine]]></Name>
-					<X>695</X><Y>-530</Y>
+					<X>695</X><Y>-534</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8460,7 +8693,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458009747</Id>
 					<Name><![CDATA[lujiaoxiangEntranceLine]]></Name>
-					<X>655</X><Y>-530</Y>
+					<X>655</X><Y>-534</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8476,7 +8709,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458054201</Id>
 					<Name><![CDATA[EpoqueEntranceLine]]></Name>
-					<X>615</X><Y>-530</Y>
+					<X>615</X><Y>-534</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8492,7 +8725,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458082100</Id>
 					<Name><![CDATA[wonderfullifeEntranceLine]]></Name>
-					<X>563</X><Y>-529</Y>
+					<X>562</X><Y>-534</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8508,7 +8741,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458506254</Id>
 					<Name><![CDATA[ZaraHomeEntranceLine]]></Name>
-					<X>350</X><Y>-510</Y>
+					<X>350</X><Y>-513</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8524,7 +8757,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458673122</Id>
 					<Name><![CDATA[LadymEntranceLine]]></Name>
-					<X>275</X><Y>-700</Y>
+					<X>275</X><Y>-704</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8540,7 +8773,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458707172</Id>
 					<Name><![CDATA[UnderwearShopEntranceLine]]></Name>
-					<X>352</X><Y>-708</Y>
+					<X>352</X><Y>-712</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8556,7 +8789,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458768654</Id>
 					<Name><![CDATA[CharlesKeithEntranceLine]]></Name>
-					<X>399</X><Y>-717</Y>
+					<X>397</X><Y>-721</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8572,7 +8805,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582458958028</Id>
 					<Name><![CDATA[XiaoMiEntranceLine]]></Name>
-					<X>457</X><Y>-728</Y>
+					<X>454</X><Y>-732</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8588,7 +8821,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582459012198</Id>
 					<Name><![CDATA[HuaWeiEntranceLine]]></Name>
-					<X>460</X><Y>-620</Y>
+					<X>460</X><Y>-617</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8604,7 +8837,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582459049201</Id>
 					<Name><![CDATA[OyshoEntranceLine]]></Name>
-					<X>340</X><Y>-620</Y>
+					<X>338</X><Y>-617</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8614,13 +8847,13 @@ viewArea.navigateTo();
 					<LineColor>-16744448</LineColor>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-40</X><Y>-15</Y></Point>
+						<Point><X>-39</X><Y>-16</Y></Point>
 					</Points>
 				</TargetLine>
 				<TargetLine>
 					<Id>1582459088230</Id>
 					<Name><![CDATA[CharlesKeithEntranceLine1]]></Name>
-					<X>400</X><Y>-620</Y>
+					<X>399</X><Y>-617</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8634,25 +8867,9 @@ viewArea.navigateTo();
 					</Points>
 				</TargetLine>
 				<TargetLine>
-					<Id>1582459908823</Id>
-					<Name><![CDATA[XiaoMiEntranceLine1]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-16744448</LineColor>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-34</X><Y>6</Y></Point>
-					</Points>
-				</TargetLine>
-				<TargetLine>
 					<Id>1582459914459</Id>
 					<Name><![CDATA[ckjeansEntranceLine]]></Name>
-					<X>595</X><Y>-754</Y>
+					<X>594</X><Y>-756</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8662,13 +8879,13 @@ viewArea.navigateTo();
 					<LineColor>-16744448</LineColor>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-75</X><Y>19</Y></Point>
+						<Point><X>-75</X><Y>18</Y></Point>
 					</Points>
 				</TargetLine>
 				<TargetLine>
 					<Id>1582460022349</Id>
 					<Name><![CDATA[mixyinmiEntranceLine]]></Name>
-					<X>545</X><Y>-594</Y>
+					<X>543</X><Y>-593</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8684,7 +8901,7 @@ viewArea.navigateTo();
 				<TargetLine>
 					<Id>1582460162466</Id>
 					<Name><![CDATA[UniqloEntranceLine]]></Name>
-					<X>690</X><Y>-740</Y>
+					<X>692</X><Y>-740</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8694,13 +8911,13 @@ viewArea.navigateTo();
 					<LineColor>-16744448</LineColor>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>62</Y></Point>
+						<Point><X>1</X><Y>60</Y></Point>
 					</Points>
 				</TargetLine>
 				<TargetLine>
 					<Id>1582460193183</Id>
 					<Name><![CDATA[UniqloEntranceLine1]]></Name>
-					<X>590</X><Y>-590</Y>
+					<X>590</X><Y>-587</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9546,6 +9763,7 @@ viewArea.navigateTo();
 					<FillMaterial>null</FillMaterial>
 					<Points>
 					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+					   <Point><X>-33</X><Y>0</Y><Z>0</Z></Point>
 					   <Point><X>-50</X><Y>0</Y><Z>0</Z></Point>
 					   <Point><X>-50</X><Y>-30</Y><Z>0</Z></Point>
 					   <Point><X>-10</X><Y>-40</Y><Z>0</Z></Point>
@@ -9608,9 +9826,10 @@ viewArea.navigateTo();
 					<FillMaterial>null</FillMaterial>
 					<Points>
 					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+					   <Point><X>-40</X><Y>2</Y><Z>0</Z></Point>
 					   <Point><X>-70</X><Y>5</Y><Z>0</Z></Point>
-					   <Point><X>-70</X><Y>-85</Y><Z>0</Z></Point>
-					   <Point><X>-20</X><Y>-90</Y><Z>0</Z></Point>
+					   <Point><X>-71</X><Y>-99</Y><Z>0</Z></Point>
+					   <Point><X>-24</X><Y>-103</Y><Z>0</Z></Point>
 					</Points>
 					<Closed>true</Closed>
 				</Polyline>
@@ -9670,8 +9889,8 @@ viewArea.navigateTo();
 					<Points>
 					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
 					   <Point><X>-30</X><Y>10</Y><Z>0</Z></Point>
-					   <Point><X>-40</X><Y>-30</Y><Z>0</Z></Point>
-					   <Point><X>-5</X><Y>-35</Y><Z>0</Z></Point>
+					   <Point><X>-43</X><Y>-43</Y><Z>0</Z></Point>
+					   <Point><X>-6</X><Y>-47</Y><Z>0</Z></Point>
 					</Points>
 					<Closed>true</Closed>
 				</Polyline>
@@ -9730,8 +9949,8 @@ viewArea.navigateTo();
 					<FillMaterial>null</FillMaterial>
 					<Points>
 					   <Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-					   <Point><X>-10</X><Y>-40</Y><Z>0</Z></Point>
-					   <Point><X>15</X><Y>-45</Y><Z>0</Z></Point>
+					   <Point><X>-13</X><Y>-51</Y><Z>0</Z></Point>
+					   <Point><X>13</X><Y>-53</Y><Z>0</Z></Point>
 					   <Point><X>25</X><Y>-5</Y><Z>0</Z></Point>
 					</Points>
 					<Closed>true</Closed>
@@ -10441,6 +10660,7 @@ viewArea.navigateTo();
 					   <Point><X>0</X><Y>40</Y><Z>0</Z></Point>
 					   <Point><X>-58</X><Y>40</Y><Z>0</Z></Point>
 					   <Point><X>-58</X><Y>0</Y><Z>0</Z></Point>
+					   <Point><X>-36</X><Y>0</Y><Z>0</Z></Point>
 					</Points>
 					<Closed>true</Closed>
 				</Polyline>
@@ -10478,6 +10698,7 @@ viewArea.navigateTo();
 					   <Point><X>-78</X><Y>88</Y><Z>0</Z></Point>
 					   <Point><X>-78</X><Y>39</Y><Z>0</Z></Point>
 					   <Point><X>-78</X><Y>-1</Y><Z>0</Z></Point>
+					   <Point><X>-45</X><Y>-1</Y><Z>0</Z></Point>
 					</Points>
 					<Closed>true</Closed>
 				</Polyline>
