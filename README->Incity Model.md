@@ -34,3 +34,6 @@ The work need Site survey：(需要实地勘查的）
 2. The rush time event 
 3. The Escalator's data
 
+
+2020/3/15
+1. Update the 2D version with the shop brand(fix one of the original problem)
