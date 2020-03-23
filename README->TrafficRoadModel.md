@@ -38,3 +38,9 @@ The work still need to do next还没完成的工作：
 2. 需要收集自行车与电动车的数据：电动车和自行车的大致数量统计（单位时间内）
 3. 红绿灯的时长
 4. 可调头车道的范围
+
+
+2020/3/22
+The work done:
+1. Add more components into the animation(building, tree, bus, bus stop);
+2. Make adjustment to the logic of bus(and how it stop); 
